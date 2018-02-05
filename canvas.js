@@ -7,12 +7,13 @@ var clearButton = document.getElementById("clear");
 var draw = function(e) {
     ctx.beginPath();
     if (drawCircles){
-        ctx.arc(e.clientX-7, e.clientY-7, 15, 0, 2 * Math.PI);
+        ctx.arc(e.offsetX, e.offsetY, 15, 0, 2 * Math.PI);
         ctx.stroke();
         ctx.fill();
+        lineTo()
     }
     else{
-        ctx.fillRect(event.clientX-22, event.clientY-22, 30, 30);
+        ctx.fillRect(e.offsetX-15, e.offsetY-15, 30, 30);
     };
 };
 
