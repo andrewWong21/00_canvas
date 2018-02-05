@@ -10,7 +10,6 @@ var draw = function(e) {
         ctx.arc(e.offsetX, e.offsetY, 15, 0, 2 * Math.PI);
         ctx.stroke();
         ctx.fill();
-        lineTo()
     }
     else{
         ctx.fillRect(e.offsetX-15, e.offsetY-15, 30, 30);
