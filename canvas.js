@@ -7,13 +7,13 @@ var clearButton = document.getElementById("clear");
 var draw = function(e) {
     ctx.beginPath();
     if (drawCircles){
-        ctx.arc(event.clientX-7, event.clientY-7, 15, 0, 2 * Math.PI);
+        ctx.arc(e.clientX-7, e.clientY-7, 15, 0, 2 * Math.PI);
         ctx.stroke();
         ctx.fill();
     }
     else{
         ctx.fillRect(event.clientX-22, event.clientY-22, 30, 30);
-    }
+    };
 };
 
 var toggle = function(e) {
